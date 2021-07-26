@@ -1,0 +1,245 @@
+https://medium.com/@reach2arunprakash/guvi-zen-class-find-the-culprits-and-nail-them-9ee6c67c44fb
+////////////////
+
+
+Fix the below to alert Guvi geek
+////////// 
+let fname = "Guvi";
+let lname = "geek"
+var admin = fname+lname;
+alert( admin );
+//////////
+
+Fix the below to alert hello Guvi geek
+//////////
+let fname = "Guvi";
+let lname = "geek"
+var admin = fname+lname;
+alert( "hello"+" "+admin );
+//////////
+
+Fix the below to alert sum of two numbers
+//////////
+let a = prompt("First number?");
+let b = prompt("Second number?");
+alert(+a + +b);
+///////////////
+
+If you run the below scritpt you will get “Code is Blasted”
+Explain Why the Code is blasted and how to diffuse it and get “Diffused”.
+//////////////
+var a = 2 > 12;
+
+if (a) {
+  console.log("Code is Blasted")
+}
+else
+{
+  console.log("Diffused") 
+}
+////////////////
+
+Fix the code to welcome the boss
+///////////
+var a=prompt("enter a value");
+if (a== null || 2 || undefined )
+{
+var message = "welcome boss";
+}
+else
+{
+ var  message = "Go away";
+}console.log(message);
+ 
+ ///////////////
+ 
+ let message;
+let lock = 0;
+//Dont change any code below this 
+if (null || lock || undefined )
+{
+  message = "Go away";
+}
+else
+{
+ message = "welcome";
+}
+  console.log(message);
+  ////////////
+  
+  Change the code to print
+3
+2
+1
+////////////////
+let i = 3;
+while (i) {
+  console.log( i-- );
+}
+////////
+
+Change the code to print 1 to 10 in 4 lines
+//////////
+var a=1;
+for(i=0;i<10;i++)
+console.log(a+i);
+///////////
+
+Change the code to print even numbers
+//////////
+for (let num = 2; num <= 20; num += 2) {
+  console.log(num)
+}
+//////////////
+
+Change the code to print all the gifts
+///////////////////
+let gifts = ["teddy bear", "drone", "doll"];
+for (let i = 0; i < 3; i++) {
+  console.log(gifts[i]);
+}
+////////////
+
+Fix the code to disarm the bomb.
+//////////////
+let countdown = 100;
+while (countdown > 0) {
+  var a= countdown--;  
+}
+  if(a==1 )
+  {
+   console.log("bomb disarmed");
+  }
+
+////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
+
+https://medium.com/@reach2arunprakash/www-guvi-io-zen-4fa483a7d359
+
+/////////////////////
+Write a code to print the numbers in the array
+Output: 1234567891011
+////////
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var new_string = "";
+ 
+for (var i = 0; i < 11; i++) {
+ new_string += numsArr[i] 
+}
+console.log(new_string);
+//////////////
+Write a code to print the numbers in the array
+Output: 1,2,3,4,5,6,7,8,9,10,11
+//////////////
+
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var new_string = "";
+ 
+for (var i = 0; i < 11; i++) {
+ new_string += numsArr[i] + "," ;
+}
+console.log(new_string);
+/////////////////
+
+Write a code to print from last to first with spaces (Make sure there is no space after the last element 1)
+Output: 11 10 9 8 7 6 5 4 3 2 1
+////////////////
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var new_string = "";
+
+for (var i = 11; i >= 0; i --) {
+ new_string += numsArr[i] + " ";
+}
+console.log(new_string.trim());
+
+
+/////////////////
+
+Write a code to replace the array value — If the number is even, replace it with ‘even’.
+Output:[ 1, “even”, 3, “even”, 5, “even”, 7, “even”, 9, “even”, … ]
+///////////////////
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+for (var i = 0; i <=10; i++) {
+ if(numsArr[i] %2 == 0 )
+ {
+ numsArr[i] = "even";
+ }
+}
+console.log(numsArr);
+/////////
+
+Write a code to replace the array value — If the index is even, replace it with ‘even’.
+Output: [ “even”, 2, “even”, 4, “even”, 6, “even”, 8, “even”, 10, … ]
+////////////////
+
+
+
+
+
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+for (var i = 0; i <=10; i++) {
+ if(numsArr[i] %2 != 0 )
+ {
+ numsArr[i] = "even";
+ }
+}
+console.log(numsArr)
+
+
+//////////////////
+Write a code to add all the numbers in the array
+///////
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var sum=0;
+for (var i = 0; i <10; i++) {
+ if(numsArr[i]%2==0);
+ sum += numsArr[i]
+}
+console.log(sum);
+///////////
+
+Write a code to add the even numbers only
+Output: 30
+///////////
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var sum=0;
+for (var i = 0; i <10; i++) {
+ if((+numsArr[i])%2==0){
+ sum += (+numsArr[i]);
+}
+}
+console.log(sum);
+////////////
+Write a code to add the even numbers and subract the odd numbers
+Output: 94
+///////////////////
+
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var sum=100;
+for (var i = 0; i <=10; i++) {
+ if((+numsArr[i])%2==0)
+ {
+ sum += +numsArr[i]
+ }
+ else
+ {
+ sum -= +numsArr[i]
+ }
+}
+console.log(sum);
+////////////
+
+Fix the code to Sum of the digits present in the number
+///////////////////
+let n = 123;
+console.log(add(n));
+function add(n)
+{
+let sum = 10;
+for(var i=0;i<n.length;i++){
+ sum+=n[i]
+ }
+ return sum;
+}
+/////////////////
