@@ -275,9 +275,6 @@ Write a code to print elements in the inner arrays in reverse
 Output: 11 10 9 8 7 6 5 4 3 2 1
 //////////////////////
 
-
-
-
 var numsArr = [[1, 2, 3, 4, 5],[ 6, 7, 8, 9, 10, 11]];
 var str="";
 for(j=5;j>=0;j--){
@@ -289,6 +286,80 @@ for(i=4;i>=0;i--)
 str += " "+numsArr[0][i];
 }
 console.log(str);
+
+///////////////////
+Write a code to replace the array value — If the index is even, replace it with ‘even’.
+////////////////////////////////
+var numsArr = [[1, 2, 3, 4, 5],[ 6, 7, 8, 9, 10, 11]];
+    var str_all=0;
+    for (var i = 0; i < numsArr.length; i++) {
+     var inner_array = numsArr[i];
+     for(var j = 0 ; j < inner_array.length; j++ ){
+          if(j %2 === 0 )
+          {
+             inner_array[j] = "even";
+          }
+     }
+    }
+    console.log(numsArr);
+    
+    ////////////////////////
+    
+    Write a code to add elements in the inner arrays based on odd or even values
+Output:
+36
+30
+////////////////
+var numsArr = [[1, 2, 3, 4, 5],[ 6, 7, 8, 9, 10, 11]];
+var sum_odd=0;
+var sum_even=0;
+for (var i = 0; i < numsArr.length; i++) {
+     var inner_array = numsArr[i];
+     console.log(inner_array);
+     for(var j = 0 ; j < inner_array.length;j++ ){
+         if(inner_array[j]%2!=0)
+         {
+            sum_odd += +inner_array[j];
+         }
+         else
+         {
+            sum_even += +inner_array[j];
+         }
+     }
+}
+console.log(sum_odd);
+console.log(sum_even);
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////
+
+https://medium.com/@reach2arunprakash/guvi-zen-simple-debugging-tasks-adcdc2d3249d
+Fix the code to get the largest of three.
+///////////
+
+    let f=1,s=2,t=3;
+    console.log(f,s,t);
+    if(f>s &&f>t){
+    console.log(f)}
+    else if(s>f && s>t){
+    console.log(s)}
+    else{
+    console.log(t)}
+////////////////////
+Fix the code to Sum of the digits present in the number
+///////////////////
+let n = 123;
+
+console.log(add(n));
+function add(n)
+{
+let sum = 0;
+for(var i=1;i<4;i++){
+ sum+= i;
+ }
+ return sum;
+}
+//////////////////////
 
 
 
