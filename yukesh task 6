@@ -360,9 +360,55 @@ for(var i=1;i<4;i++){
  return sum;
 }
 //////////////////////
+Fix the code to sum the number in that array
+///////////
+
+let array = [10, 20, 30, 40,50,60,70,80,90,100] 
+let result = (function (Array) {
+    return (Array.reduce((total,item)=>
+    {
+  return  total+item;
+    }))
+})(array);
+    console.log(result);
+   
+///////////////////////////////
+Fix the code to rotate an array by k times and return rotated array using IIFE function
+////////////////////
+
+let arr=[1, 2, 3, 6, 8, 6, 1, 9, 10, 12, 13];
+let result = ((array, k) => {
+
+    for (let i = 0; i < k; i++) {
+        let temp = array.shift()
+        array.push(temp)
+    }
+    return array
+
+})(arr, 3);
+console.log(result);
+////////////////////////////////
+print all odd numbers in an array using IIFE function
+///////////////////
+
+var array = [1, 2, 3, 5, 7, 79, 7, 2, 6, 9, 4];
+let result = (function (array) {
+    return (array.filter((odd) => {
+    return odd % 2 !== 0
+    }))
+    })(array);
+    console.log( result);
+ ///////////////////////
+ Fix the code to reverse.
+ //////////////////////
 
 
+(function(str){
+    str1 = str.split("").reverse().join("");
+    console.log(str1); 
+   })("abcd");
 
+////////////////////////////
 
 
 
